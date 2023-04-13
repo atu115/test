@@ -1,5 +1,6 @@
 package quesiton19;
-import java.time.LocalDateTime;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 //LocalDateTimeをインポート
 
 public class Quesiton19{
@@ -17,10 +18,11 @@ public class Quesiton19{
 		//numを出力
 		
 		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
-		LocalDateTime ldt = LocalDateTime.now();
+		Date date = new Date();
+		SimpleDateFormat format = new SimpleDateFormat( "yyyy-MM-dd H:m:s" );
 		//現在時刻をldtに格納
-        System.out.println(ldt);
-        //ldt出力
+		System.out.println(format.format(date));
+		//ldt出力
 		
 	}
 }
