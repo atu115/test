@@ -1,4 +1,4 @@
-package quesiton19;
+package question19;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 //LocalDateTimeをインポート
