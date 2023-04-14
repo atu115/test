@@ -14,7 +14,7 @@
 		・日時は今日の日付を取得してください。
 		
   */
-package question20_22Run;
+package question20_22Run; 
 import question20_22Proc.Proc;
 
 public class Run{

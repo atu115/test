@@ -2,7 +2,7 @@ package question20_22Proc;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
-public class Proc {
+public class Proc { 
 	Date date;
 	SimpleDateFormat today;
 	
