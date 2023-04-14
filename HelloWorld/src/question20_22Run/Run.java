@@ -19,7 +19,19 @@ import question20_22Proc.Proc;
 
 public class Run{
 	public static void main(String[] args) {
-		Proc proc = new Proc();		
+		Proc message1 = new Proc();
+		System.out.println(message1.Hello);
 		
+		Proc message2 = new Proc();
+		System.out.println(message2.sushi);
+		
+		Proc message3 = new Proc();
+		System.out.println(message3.washoku);
+		
+		Proc message4 = new Proc();
+		System.out.println(message3.washoku);
+		
+		Proc message5 = new Proc();
+		System.out.println("今の現在日時は"+message5.today+"です");
 	}
 }
