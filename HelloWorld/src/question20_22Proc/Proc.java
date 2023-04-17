@@ -17,7 +17,7 @@ public class Proc {
 		this.washoku="寿司は和食です";
 		
 		Date date =new Date();
-		SimpleDateFormat format = new SimpleDateFormat("yyyy/mm/dd H:m:s");
+		SimpleDateFormat format = new SimpleDateFormat( "yyyy/MM/dd H:m:s");
 		this.today=format.format(date);
 	}
 }

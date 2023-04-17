@@ -16,7 +16,7 @@ public class Question23 {
 	private double height;
 	private int speed;
 	
-	//getter
+	//setter
 	void setName(String name) {
 		this.name = name;
 	}
@@ -27,7 +27,7 @@ public class Question23 {
 		this.speed = speed;
 	}
 	
-	//setter
+	//getter
 	String getName() {
 		return this.name;
 	}	
