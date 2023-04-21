@@ -67,15 +67,4 @@ public class ProcSub extends ProcSuper{
 	}
 }
 
-////サブクラス---------------------------------
-//class ProcSub extends ProcSuper {
-//	public ProcSub(String name){
-//		super(name);
-//	}
-//	@Override
-//	public void status() {
-//		// スーパークラスと同じ処理-------------------
-//		super.status();
-//	 }
-//}
 
