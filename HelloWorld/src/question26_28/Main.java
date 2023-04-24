@@ -92,16 +92,12 @@ public class Main {
 
 		// Scannerクラスのインスタンスを作成---------------------------
 	    // 引数で標準入力System.inを指定する
-		
-		//コンソール指示-----------------------------------
 		System.out.println("「動物名:体長：速度」を入力");
 		
 		//スキャナー定義-----------------------------------
 		Scanner sc = new Scanner(System.in);
 	    String line = sc.nextLine();
 	    sc.close();
-	    
-	    
 	    
 	    //配列分割---------------------------------------
 	    String[] animal = line.split(",");
