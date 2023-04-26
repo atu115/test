@@ -40,27 +40,27 @@
   */
 
 package question26_28;
-//
+
 import java.util.Scanner;
 
 
 class Question26_28 {
-	String[] name=new String[6];
-	String[] height=new String[6];
-	String[] speed=new String[6];
+	String[] name = new String[6];
+	String[] height = new String[6];
+	String[] speed = new String[6];
 	
 	
 	// メソッドの宣言・定義---------------------------
 	void message(){
 		
-		//出力繰り返し表示
-		for(int i=0; i<=5;i++) {
-			//出力結果-------------------------------
-			System.out.println("動物名："+name[i]);
-			System.out.println("体長："+height[i]+"m");
-			System.out.println("速度："+speed[i]+"km/h");
+		// 出力繰り返し表示
+		for(int i = 0; i <= 5;i++) {
+			// 出力結果-------------------------------
+			System.out.println("動物名：" + name[i]);
+			System.out.println("体長：" + height[i] + "m");
+			System.out.println("速度：" + speed[i] + "km/h");
 	
-			 if("ライオン".equals(name[i]) ) {
+			 if("ライオン".equals(name[i])) {
 			    	System.out.println("学名：パンテラ レオ");
 			    }
 			 else if("ゾウ".equals(name[i])) {
@@ -82,7 +82,7 @@ class Question26_28 {
 	
 }
 
-//Mainクラス------------------------------------------	
+// Mainクラス------------------------------------------	
 public class Main {	
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
@@ -94,12 +94,12 @@ public class Main {
 	    // 引数で標準入力System.inを指定する
 		System.out.println("「動物名:体長：速度」を入力");
 		
-		//スキャナー定義-----------------------------------
+		// スキャナー定義-----------------------------------
 		Scanner sc = new Scanner(System.in);
 	    String line = sc.nextLine();
 	    sc.close();
 	    
-	    //配列分割---------------------------------------
+	    // 配列分割---------------------------------------
 	    String[] animal = line.split(",");
 	    String[] animalData0 = animal[0].split(":");
 		String[] animalData1 = animal[1].split(":");
@@ -110,39 +110,39 @@ public class Main {
 		
 		
 	    
-	    //「動物名:体長：速度」をフィールドに挿入------------------
-		//ライオン--------------------------
+	    // 「動物名:体長：速度」をフィールドに挿入------------------
+		// ライオン--------------------------
 		q.name[0] = animalData0[0];
 		q.speed[0] = animalData0[1];
 		q.height[0] = animalData0[2];
 	    
-		//ゾウ-----------------------------
+		// ゾウ-----------------------------
 		q.name[1] = animalData1[0];
 		q.speed[1] = animalData1[1];
 		q.height[1] = animalData1[2];
 		
-		//パンダ-----------------------------
+		// パンダ-----------------------------
 		q.name[2] = animalData2[0];
 		q.speed[2] = animalData2[1];
 		q.height[2] = animalData2[2];
 		
-		//チンパンジー-------------------------
+		// チンパンジー-------------------------
 		q.name[3] = animalData3[0];
 		q.speed[3] = animalData3[1];
 		q.height[3] = animalData3[2];
 		
-		//シマウマ----------------------------
+		// シマウマ----------------------------
 		q.name[4] = animalData4[0];
 		q.speed[4] = animalData4[1];
 		q.height[4] = animalData4[2];
 		
-		//インコ-------------------------------
+		// インコ-------------------------------
 		q.name[5] = animalData5[0];
 		q.speed[5] = animalData5[1];
 		q.height[5] = animalData5[2];
 		
 		
-		//出力-------------------------------
+		// 出力-------------------------------
 		q.message();
 		
 	}
