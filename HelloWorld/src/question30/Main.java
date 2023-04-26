@@ -25,9 +25,9 @@ class Person{
 	// printメソッド---------------------------------------------
 	public void print() {
 		double BMI = bmi();
-		System.out.println("名前は"+this.name+"です");
-		System.out.println("年は"+this.age+"です");
-		System.out.println("BMIは"+Math.floor(BMI)+"です");
+		System.out.println("名前は" + this.name + "です");
+		System.out.println("年は" + this.age + "です");
+		System.out.println("BMIは" + Math.floor(BMI) + "です");
 	}
 }
 
