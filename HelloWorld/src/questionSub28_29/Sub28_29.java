@@ -7,9 +7,9 @@ public class Sub28_29 {
 
 		
 		public void message(int i) {
-			System.out.println("都道府県名："+ pref[i]);
-			System.out.println("県庁所在地："+ city[i]);
-			System.out.println("面積："+ area[i]+"km2");
+			System.out.println("都道府県名：" + pref[i]);
+			System.out.println("県庁所在地：" + city[i]);
+			System.out.println("面積：" + area[i] + "km2");
 			System.out.println(" ");
 	}
 }

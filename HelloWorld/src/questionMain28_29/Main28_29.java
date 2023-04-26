@@ -42,13 +42,12 @@ import java.util.HashMap;
 import java.util.Map;
 import questionSub28_29.Sub28_29;
 
-//Mainクラス------------------------------------------	
+// Mainクラス------------------------------------------	
 public class Main28_29 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		
 		// インスタンス(オブジェクト)を生成------------------------------
-		//questionMain28_29 q = new questionMain28_29();
 		questionSub28_29.Sub28_29 q = new Sub28_29();
 		// Scannerクラスのインスタンスを作成---------------------------
 	    // 引数で標準入力System.inを指定する
@@ -56,7 +55,7 @@ public class Main28_29 {
 
 		
 		// 連想配列　Map宣言*-----------------------------
-		Map<Integer, String> map = new HashMap<>();
+		Map<Integer, String > map = new HashMap <> ();
 		// Mapにキーと値を格納-----------------------------
 		map.put(0, "北海道:札幌市:83424");
 		map.put(1, "青森県:青森市:9646");
@@ -73,30 +72,30 @@ public class Main28_29 {
 		
 		// スキャナー定義-----------------------------------
 	    Scanner sc = new Scanner(System.in);
-	    //スキャナー分割し配列作成
+	    // スキャナー分割し配列作成
 	    String[] line = sc.nextLine().split(",");
 
-	    //　コンソール型変換のための配列---------------------------
-	    int[] num=new int[11];
+	    // コンソール型変換のための配列---------------------------
+	    int[] num = new int[11];
 	    //昇順-----------------------------------------
 	    
 	    Arrays.sort(num);
-	    //コンソールに打った数に合わせて出力------------------------------
-	    for(int i=0;i<line.length;i++) {
+	    // コンソールに打った数に合わせて出力------------------------------
+	    for(int i = 0;i < line.length;i++) {
 	    	// 配列の中身をInt型に変換--------------------------
-	    	num[i] =Integer.parseInt(line[i]);
+	    	num[i] = Integer.parseInt(line[i]);
 
 	    	
 	    	// キー取り出し------------------------------------
-	    	for(int key : map.keySet()) {
+	    	for(int key:map.keySet()) {
 	    		// キーとコンソールの文字が同じとき表示---------------
 	    		if(key == num[i]){
 	    			// 挿入された番号の配列を分解----------------
 		    		String[] list = map.get(num[i]).split(":");
 		    		//[都道府県,都市名,面積]を挿入-------------
-		    		q.pref[num[i]]=list[0];
-		    		q.city[num[i]]=list[1];
-		    		q.area[num[i]]=list[2];
+		    		q.pref[num[i]] = list[0];
+		    		q.city[num[i]] = list[1];
+		    		q.area[num[i]] = list[2];
 		    		// 出力---------------------------------
 		    		q.message(num[i]);
 	    		}	
