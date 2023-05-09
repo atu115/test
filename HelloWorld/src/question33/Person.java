@@ -21,10 +21,12 @@ public class Person{
 		this.count++;
 	}
 	
+	// fullNameメソッド---------------------------------
 	public String fullName(){
 		return this.firstName + this.lastName;
 		}
 	
+	// printCountメソッド-------------------------------
 	public void printCount() {
 		System.out.println("合計" + Person.count + "人です");
 	}

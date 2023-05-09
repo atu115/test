@@ -1,5 +1,6 @@
 package question31;
 
+//　Personクラス----------------------
 class Person{
 	// インスタンスフィールドを定義-----------------------------------------------
 	String name;
@@ -15,12 +16,13 @@ class Person{
 		this.weight = weight;
 	}
 	
-	// インスタンスメソッドbuyを定義
+	// インスタンスメソッドbuyを定義---------------------
 	public void buy(Car car) {
-	car.setOwner(this.name);
-	System.out.println(car.getOwner() + "が購入しました");
+		car.setOwner(this.name);
+		System.out.println(car.getOwner() + "が購入しました");
 	}
 	
+	// インスタンスメソッドbuyを定義----------------------
 	public void buy(Bicycle bicycle) {
 		bicycle.setOwner(this.name);
 		System.out.println(bicycle.getOwner() + "が購入しました");
@@ -40,8 +42,4 @@ class Person{
 		System.out.println("年は" + this.age + "です");
 		System.out.println("BMIは" + Math.floor(BMI) + "です");
 	}
-	
-	
-	
-	
 }
